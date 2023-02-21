@@ -40,7 +40,7 @@ anio = int(input("Introduce el año: "))
 # Múltiplo de 4 pero no de 100
 bis1 = (anio % 4 == 0) and (anio % 100 != 0)
 
-#Múltiplo de 400
+# Múltiplo de 400
 bis2 = anio % 400 == 0
 
 
