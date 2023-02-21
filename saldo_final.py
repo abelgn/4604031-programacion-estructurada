@@ -1,0 +1,6 @@
+a = float(input("Precio primer artúculo: "))
+b = float(input("Precio segundo artúculo: "))
+c = float(input("Precio tercer artúculo: "))
+saldo_inical = float(input("Saldo inicial: "))
+saldo_final = saldo_inical - (a + b + c)
+print("El saldo final de la tarjeta es:", saldo_final, "\n\n\n")
