@@ -36,7 +36,7 @@ print()
 anio = int(input("Introduce el año: "))
 
 
-# Cáclulos para saber si el año es bisiesto
+# Cálculos para saber si el año es bisiesto
 # Múltiplo de 4 pero no de 100
 bis1 = (anio % 4 == 0) and (anio % 100 != 0)
 

@@ -48,7 +48,6 @@ de acuerdo con las tarifas de la CFE en la CDMX:
     total
 """
 
-
 # Inicialización de las constantes
 t_basico = 0.939
 t_intermedio = 1.146
@@ -58,12 +57,9 @@ max_basico = 150
 max_intermedio = 280
 max_excedente = 500
 
-
-
 # Se piden los datos de entrada
 print()
 consumo = float(input("Introduce el consumo en KWh: "))
-
 
 # Cálculos para conocer el costo del consumo
 
@@ -78,8 +74,7 @@ elif consumo <= max_excedente:
             + (max_intermedio - max_basico) * t_intermedio \
             + (consumo - max_intermedio) * t_excedente
 else:
-            total = consumo * t_dac
-
+    total = consumo * t_dac
 
 # Se despliega el resultado
 print('El total a pagar por el consumo de', consumo, 'KWh es', total)

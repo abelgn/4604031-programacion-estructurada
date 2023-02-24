@@ -16,7 +16,7 @@ longitud.
     lado c
 
 3. Cálculos:
-    a) Para saber si un triángulo es equiátero,
+    a) Para saber si un triángulo es equilátero,
         se deben comparar las longitudes de sus
         lados y deben ser las mismas:
             
@@ -34,11 +34,11 @@ b = float(input("Ingresa la longitud del segundo lado: "))
 c = float(input("Ingresa la longitud del tercer lado: "))
 
 
-# Cáclulos para saber si el triángulo es equilátero
+# Cálculos para saber si el triángulo es equilátero
 es_quilatero = (a == b) and (b == c)
 
 
-# Se decide si el triángulo es equilatero cuando se
+# Se decide si el triángulo es equilátero cuando se
 # cumple la condición anterior
 if es_quilatero:
     resp = 'es equilátero'
