@@ -48,7 +48,7 @@ if mes == 1 or mes == 2:
 # marzo corresponde a dos estaciones, depende
 # del día
 elif mes == 3:
-    # antes del 20 es invierno
+    # antes del 20 es invierno
     if dia < 20:
         estacion = 'invierno'
     # del 20 en adelante es primavera
@@ -62,7 +62,7 @@ elif mes == 4 or mes == 5:
 # junio corresponde a dos estaciones, depende
 # del día
 elif mes == 6:
-    # antes del 21 es primavera
+    # antes del 21 es primavera
     if dia < 21:
         estacion = 'primavera'
     # del 21 en adelante es verano
@@ -76,7 +76,7 @@ elif mes == 7 or mes == 8:
 # septiemre corresponde a dos estaciones, depende
 # del día
 elif mes == 9:
-    # antes del 22 es verano
+    # antes del 22 es verano
     if dia < 22:
         estacion = 'verano'
     # del 22 en adelante es otoño
@@ -90,7 +90,7 @@ elif mes == 10 or mes == 11:
 # diciembre corresponde a dos estaciones, depende
 # del día
 elif mes == 12:
-    # antes del 21 es otoño
+    # antes del 21 es otoño
     if dia < 21:
         estacion = 'otoño'
     # del 21 en adelante es invierno
