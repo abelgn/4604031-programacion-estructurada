@@ -8,15 +8,15 @@ y algunas operaciones.
 
 # Los strings son secuencias de caractares
 # entre comillas dobles
-printf("Hola")
+print("Hola")
 
 # o comillas secillas (opción preferida)
-printf('Hola')
+print('Hola')
 
 # La cadena vacía es una cadena sin caracteres
-printf("")
+print("")
 
-printf('')
+print('')
 
 # Algunas secuencias de escape
 # \b  Retroceso
