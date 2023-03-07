@@ -4,15 +4,19 @@ Autor: Abel García
 
 Decide si un número es primo.
 
+Un número > 1 es primo si únicamente es
+divisible entre 1 y él mismo.
+
 1. Constantes:
     Ninguna.
     
 2. Los datos de entrada son:
-    x
+    x, el número entero positivo a verificar
+    si es primo.
 
 3. Cálculos:
     a) Para saber si un número x es primo,
-        se debe verificar que x no sea múltimo
+        se debe verificar que x no es múltiplo
         de k, con 1 < k < x.
 
 4. Los datos de salida son:
@@ -20,15 +24,25 @@ Decide si un número es primo.
     Falso en caso contrario.
 """
 
-# Se piden los datos de entrada
+from math import sqrt
+
+
+# Se piden el dato de entrada
+# Se espera que el dato que se ingrese
+# sea un número positivo mayor que 1
 print()
-x = int(input('Ingresa el número: '))
+positivo = False
+while not positivo:
+    x = input('Ingresa un número mayor que 1: ')
+    if x.isdigit() and int(x) > 1:
+        positivo = True
+x = int(x)
 
 
-# Cálculos para saber si el triángulo es equilátero
+# Verificación para saber si x es primo
 k = 2
 primo = True
-while (primo and k <= x/2):
+while primo and k <= sqrt(x):
     if x % k == 0:
         primo = False
     k = k + 1

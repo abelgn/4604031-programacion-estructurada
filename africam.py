@@ -1,10 +1,16 @@
 """
-Programa es_primo.py
+Programa africam.py
 Autor: Abel García
 
-El precio de admisión en Africam Safari varía según la edad del visitante. Los niños menores de 3 años no pagan. Los niños de 3 a 11 años pagan $340. A partir de 12 años pagan $350. Presentando su tarjeta del INAPAM, los adultos mayores (60 años o más) tienen 50% de descuento.
+Calcula el precio total de admisión para un grupo
+de personas que desean visitar Africam Safari.
 
-Escribe un programa que reciba del usuario las edades de un grupo de personas, con una edad en cada línea. El usuario ingresará una línea en blanco para indicar que no hay más invitados en el grupo. El programa debe mostrar el precio de admisión para el grupo con un mensaje apropiado.
+El precio de admisión en Africam Safari varía según
+la edad del visitante. Los niños menores de 3 años
+no pagan. Los niños de 3 a 11 años pagan $340. A
+partir de 12 años pagan $350. Presentando su tarjeta
+del INAPAM, los adultos mayores (60 años o más)
+tienen 50% de descuento.
 
 
 1. Constantes:
@@ -36,43 +42,46 @@ edad_adulto = 12
 edad_inapam = 60
 descto_inapam = 0.5
 
-mensaje = 'Ingresa edad del visitante o solo enter para continuar: '
+mensaje = 'Ingresa la edad del visitante o solo enter para continuar: '
 
-
-# Se piden los datos de entrada
-texto = input(mensaje)
-
-
-
-
+# Inicialización del precio total de admisión
 precio_total = 0.0
 
-# El ciclo continua mientras haya una edad como entrada
+# Se piden los datos de entrada
+print()
+texto = input(mensaje)
+
+# El ciclo continúa mientras haya una edad como entrada
 while len(texto) > 0:
-    edad = int(texto)
-    
-    # Se clasifica la edad de la persona de acuerdo con
-    # los rangos de precios
-    if edad < edad_menor:
-        precio = 0
-    elif edad < edad_adulto:
-        precio = precio_menor
+    if texto.isdigit():
+        edad = int(texto)
+
+        # Se clasifica la edad de la persona de acuerdo con
+        # los rangos de precios
+        if edad < edad_menor:
+            precio = 0
+        elif edad < edad_adulto:
+            precio = precio_menor
+        else:
+            precio = precio_adulto
+            if edad >= edad_inapam:
+                inapam = input ('Presenta tarjeta INAPAM [s/n]: ')
+                if inapam.lower() == 's':
+                    precio = precio * descto_inapam
+
+        # Se muestra el precio individual
+        print('Precio: $%6.2f' % precio)
+
+        # Se incrementa el precio total de admisión
+        precio_total = precio_total + precio
+
     else:
-        precio = precio_adulto
-        if edad >= edad_inapam:
-            inapam = input ('Presenta tarjeta INAPAM [s/n]: ')
-            if inapam.lower() == 's':
-                precio = precio * descto_inapam
-    
-    # Se muestra el precio individual
-    print('Precio: $%6.2f' % precio)
-    
-    # Se incrementa el precio de admisión
-    precio_total = precio_total + precio
+        print('Entrada no válida.')
+
     texto = input(mensaje)
 
 
 # Se despliega el resultado
-print ('El precio total de admisión es $%7.2f' % precio_total)
+print('El precio total de admisión es $%7.2f' % precio_total)
 print()
 
