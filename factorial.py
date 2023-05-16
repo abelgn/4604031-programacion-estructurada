@@ -17,8 +17,6 @@ Calcula el factorial de n.
     El factorial de n.
 """
 
-from math import sqrt
-
 
 # Se pide el dato de entrada n
 # Se espera que el dato que se ingrese
