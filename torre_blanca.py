@@ -80,7 +80,7 @@ letra N.
 i = 0
 while i < n:
     # La función choice elige un número entre 0 y 7
-    # de forma aleatoria
+    # de forma aleatoria
     x = choice(range(8))
     y = choice(range(8))
     if tablero[x][y] == '.':
@@ -94,11 +94,11 @@ Muestra en pantalla el tablero con las piezas negras.
 for j in range(7, -1, -1):
     print(j+1, end=' ')
     for i in range(8):
-        print(tablero[i][j], end =' ')
+        print(tablero[i][j], end=' ')
     print()
-print(' ', end =' ')
+print(' ', end=' ')
 for i in range(8):
-    print(i+1, end =' ')
+    print(i+1, end=' ')
 print('\n')
 
 
@@ -130,7 +130,7 @@ while not torre_ok:
             print('Valor incorrecto')
 
     # Si la posición (x,y) es correcta, se coloca la
-    # torre
+    # torre
     if torre_x_ok and torre_y_ok:
         if tablero[x-1][y-1] == '.':
             tablero[x-1][y-1] = 'T'
@@ -145,11 +145,11 @@ print()
 for j in range(7, -1, -1):
     print(j+1, end=' ')
     for i in range(8):
-        print(tablero[i][j], end =' ')
+        print(tablero[i][j], end=' ')
     print()
-print(' ', end =' ')
+print(' ', end=' ')
 for i in range(8):
-    print(i+1, end =' ')
+    print(i+1, end=' ')
 print('\n')
 
 
@@ -212,10 +212,9 @@ print()
 for j in range(7, -1, -1):
     print(j+1, end=' ')
     for i in range(8):
-        print(tablero[i][j], end =' ')
+        print(tablero[i][j], end=' ')
     print()
-print(' ', end =' ')
+print(' ', end=' ')
 for i in range(8):
-    print(i+1, end =' ')
+    print(i+1, end=' ')
 print('\n')
-

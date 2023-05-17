@@ -9,7 +9,7 @@ Calcula el perímetro de un polígono, del cual se reciben las coordenadas de su
     Ninguna.
     
 2. Los datos de entrada son:
-    Las coordenadas (xi,yi) de los vértices del
+    Las coordenadas (xi, yi) de los vértices del
     polígono.
 
 3. Cálculos:
@@ -61,7 +61,7 @@ while i < num_lados:
     i = i + 1
 
 
-# Cálcula la distancia entre dos vértices y acumula
+# Calcula la distancia entre dos vértices y acumula
 # la longitud
 i = 0
 perimetro = 0.0
@@ -73,7 +73,6 @@ while i < num_lados-1:
 difx = vertices[i][0] - vertices[0][0]
 dify = vertices[i][1] - vertices[0][1]
 perimetro = perimetro + sqrt(difx**2 + dify**2)
-
 
 
 # Se despliega el resultado
