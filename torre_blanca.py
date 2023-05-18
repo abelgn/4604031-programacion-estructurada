@@ -37,7 +37,7 @@ piezas negras dado por el usuario. Después, le pide la posición de la torre bl
 
 4. Los datos de salida son:
     Las posiciones en donde están las piezas negras
-    que pueda cpaturar la torre blanca.
+    que pueda capturar la torre blanca.
 """
 
 from random import choice
