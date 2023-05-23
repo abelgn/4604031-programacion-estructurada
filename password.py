@@ -4,7 +4,7 @@ Autor: Abel García
 
 Algunos sistemas informáticos tienen ciertas
 reglas para establecer contraseñas seguras,
-de tal forma que éstas deben cumplir con los
+de tal forma que estas deben cumplir con los
 siguientes criterios:
 
 1. Tener una longitud mínima de 8 caracteres.
@@ -19,8 +19,8 @@ Este programa verifica si una secuencia de
 caracteres forman una contraseña segura.
 
 1. Constantes:
-    especiales, una lista en donde almacenaremos
-    los caracteres especiales.
+    especiales, una lista en donde se
+    guardarán los caracteres especiales.
 
     long_minima, la longitud mínima de una
     contraseña segura
@@ -29,7 +29,7 @@ caracteres forman una contraseña segura.
     password, la secuencia de caracteres.
 
 3. Cálculos:
-    Se verifica la contraseña cumpla con los
+    Verificar que la contraseña cumple con los
     cinco criterios arriba mencionados. Esto
     se logra recorriendo la contraseña,
     carácter por carácter.
@@ -46,32 +46,36 @@ caracteres forman una contraseña segura.
     sea segura, falso en caso contrario.
 """
 
-
-# Se guardan los caracteres especiales en una lista
-especiales = ['!', '#', '$', '%', '&', '/', '(', ')', \
-              '=', '¿', '?', '¡', '!', '<', '>', '*', \
-              '+', '-', '_', '[', ']', '{', '}', '@', \
+# Se guardan los caracteres especiales en
+# una lista
+especiales = ['!', '#', '$', '%', '&', '/', \
+              '(', ')', '=', '¿', '?', '¡', \
+              '!', '<', '>', '*', '+', '-', \
+              '_', '[', ']', '{', '}', '@', \
               '|']
 
 # Longitud mínima de una contraseña segura
 long_minima = 8
-
 
 # Se pide la secuencia de caracteres.
 print()
 password = input('Ingresa la contraseña: ')
 n = len(password)
 
-# Inicialización de la variable para cada criterio
+# Inicialización de la variable para cada
+# criterio
 longitud = n >= long_minima
 digito = False
 minuscula = False
 mayuscula = False
 especial = False
+
+# Variable que indica si la contraseña es
+# segura
 segura = False
 
-# Si la contraseña cumple con la longitud mínima
-# se verifican los demás criterios
+# Si la contraseña cumple con la longitud
+# mínima se verifican los demás criterios
 if longitud:
     for i in password:
         if i.isdigit():
@@ -83,12 +87,14 @@ if longitud:
         elif i in especiales:
             especial = True
 
-    segura = digito and minuscula and mayuscula \
-         and especial
+    segura = digito and minuscula \
+             and mayuscula and especial
 
 # Se despliega el resultado
 if segura:
-    print('La contraseña', password, 'es segura')
+    print('La contraseña', password, \
+          'es segura')
 else:
-    print('La contraseña', password, 'NO es segura')
+    print('La contraseña', password, \
+          'NO es segura')
 print()
