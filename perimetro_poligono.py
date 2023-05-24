@@ -2,7 +2,8 @@
 Programa perimetro_poligono.py
 Autor: Abel García
 
-Calcula el perímetro de un polígono, del cual se reciben las coordenadas de sus vértices.
+Calcula el perímetro de un polígono, del cual se reciben las
+coordenadas de sus vértices.
 
 
 1. Constantes:
@@ -59,7 +60,7 @@ def numero_lados():
     """
     print()
     n = input("¿Cuántos lados tiene el polígono? ")
-    while (len(n) == 0) and not n.isdigit() and not int(n) >= 3:
+    while (len(n) == 0) or not n.isdigit() or int(n) < 3:
         print('Entrada no válida.')
         n = input("¿Cuántos lados tiene el polígono? ")
     return int(n)
