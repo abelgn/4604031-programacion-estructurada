@@ -8,17 +8,21 @@ siguiente_primo(x)
 anterior_primo(x)
 """
 
-from math import sqrt
-
 
 def es_primo(x):
     """
     Verifica si un número x es primo.
 
+    Un número x es primo si x > 1 y si sólo es divisible
+    entre 1 y él mismo.
+
     Devuelve True si x es primo, False en caso contrario.
     """
+    from math import sqrt
 
     primo = True
+    if x <= 1:
+        primo = False
     i = 2
     max_i = sqrt(x)
     while primo and i <= max_i:
@@ -33,6 +37,9 @@ def es_primo_mersenne(x):
     """
     Verifica si un número x es primo de Mersenne.
 
+    Un número x es primo de Mersenne si es primo y además
+    2^x - 1 también es primo.
+
     Devuelve True si x es primo de Mersenne, False en caso contrario.
     """
 
@@ -45,7 +52,7 @@ def es_primo_mersenne(x):
 
 
 def siguiente_primo(x):
-    """ Devuelve el siguiente número primo mayor que x. """
+    """Devuelve el siguiente número primo mayor que x."""
 
     x = x + 1
     primo = False
@@ -58,11 +65,11 @@ def siguiente_primo(x):
 
 
 def anterior_primo(x):
-    """ Devuelve el anterior número primo menor que x. """
+    """Devuelve el anterior número primo menor que x."""
 
     x = x - 1
     primo = False
-    while not primo:
+    while not primo and x > 1:
         if es_primo(x):
             primo = True
         else:
