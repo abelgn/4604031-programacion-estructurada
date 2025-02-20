@@ -1,3 +1,8 @@
+print("\n")
+print("***************")
+print("* Ejercicio 3")
+print("***************")
+
 tarifa_base = 7
 tarifa_km = 3.57
 tarifa_t = 1.8

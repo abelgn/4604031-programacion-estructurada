@@ -1,3 +1,8 @@
+print("\n")
+print("***************")
+print("* Ejercicio 2")
+print("***************")
+
 a = float(input("Precio primer artúculo: "))
 b = float(input("Precio segundo artúculo: "))
 c = float(input("Precio tercer artúculo: "))
