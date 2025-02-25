@@ -31,7 +31,7 @@ c = float(input("Longitud tercer lado: "))
 
 
 # Se decide qué tipo de triángulo es
-if a == b and b >= c:
+if a == b and b == c:
     tipo = "equilátero"
 elif a != b and a != c and b != c:
     tipo = "escaleno"
