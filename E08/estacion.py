@@ -29,7 +29,7 @@ dia = int(input("Día: "))
 mes = input("Mes: ")
 
 
-# Se decide qué tipo de triángulo es
+# Se decide qué estación es
 if mes == "enero" or mes == "febrero":
     estacion = "invierno"
 elif mes == "marzo":
@@ -53,7 +53,7 @@ elif mes == "septiembre":
         estacion = "otoño"
 elif mes == "octubre" or mes == "noviembre":
     estacion = "otoño"
-elif:
+else:
     if dia <= 21:
         estacion = "otoño"
     else:
