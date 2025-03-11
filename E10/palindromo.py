@@ -28,7 +28,7 @@ Verifica si una secuencia de letras es un palíndromo
 print()
 solo_letras = False
 while not solo_letras:
-    sec = input('Ingresa una secuencia de letras: ')
+    sec = input("Ingresa una secuencia de letras: ")
     secuencia = sec.replace(" ", "").replace(",", "").replace(".", "").lower()
     if secuencia.isalpha():
         solo_letras = True
@@ -45,7 +45,7 @@ for letra1, letra2 in zip(secuencia[:longitud//2], secuencia[longitud-1:longitud
 
 # Se despliega el resultado
 if palindromo:
-    print('La secuencia', sec, 'es un palindromo')
+    print("La secuencia \"" + sec + "\" es un palíndromo")
 else:
-    print('La secuencia', sec, 'no es palindromo')
+    print("La secuencia \"" + sec + "\" no es palíndromo")
 print()

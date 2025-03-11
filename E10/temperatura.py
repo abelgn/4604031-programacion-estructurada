@@ -25,7 +25,7 @@ múltiplos de 10.
 
 
 print()
-print('Celsius\tFahrenheit')
+print("Celsius\tFahrenheit")
 
 # Calcula el factorial de n
 for i in range(0, 11):
@@ -33,6 +33,6 @@ for i in range(0, 11):
     fahrenheit = (celsius * 9.0/5) + 32
 
     # Se despliega el resultado
-    print('%3d\t%3d' % (celsius, int(fahrenheit)))
+    print("%3d\t\t%3d" % (celsius, int(fahrenheit)))
 
 print()

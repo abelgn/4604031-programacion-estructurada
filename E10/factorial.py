@@ -24,7 +24,7 @@ Calcula el factorial de n.
 print()
 positivo = False
 while not positivo:
-    n = input('Ingresa un número positivo: ')
+    n = input("Ingresa un número positivo: ")
     if n.isdigit() and int(n) > 0:
         positivo = True
 n = int(n)
@@ -37,5 +37,5 @@ for i in range(1, n+1):
 
 
 # Se despliega el resultado
-print('El factorial de', n, 'es:', factorial)
+print("El factorial de", n, "es:", factorial)
 print()
