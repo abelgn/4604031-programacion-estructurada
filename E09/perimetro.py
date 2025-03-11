@@ -2,7 +2,8 @@
 Programa perimetro.py
 Autor: Abel García
 
-Calcula el perímetro de un polígono, del cual se reciben las coordenadas de sus vértices.
+Calcula el perímetro de un polígono, del cual se reciben
+las coordenadas de sus vértices.
 
 
 1. Constantes:

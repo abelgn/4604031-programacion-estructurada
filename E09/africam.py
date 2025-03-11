@@ -7,10 +7,10 @@ de personas que desean visitar Africam Safari.
 
 El precio de admisión en Africam Safari varía según
 la edad del visitante. Los niños menores de 3 años
-no pagan. Los niños de 3 a 11 años pagan $340. A
-partir de 12 años pagan $350. Presentando su tarjeta
+no pagan. Los niños de 3 a 11 años pagan $375. A
+partir de 12 años pagan $385. Presentando su tarjeta
 del INAPAM, los adultos mayores (60 años o más)
-tienen 50% de descuento.
+pagan $192.
 
 
 1. Constantes:
