@@ -3,7 +3,7 @@ Programa palindromo.py
 Autor: Abel García
 
 Para que una secuencia de letras sea un palíndromo,
-esta secuencia se tiene que leer igual de izquiera
+esta secuencia se tiene que leer igual de izquierda
 a derecha que de derecha a izquierda.
 Verifica si una secuencia de letras es un palíndromo
 

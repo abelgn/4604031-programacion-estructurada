@@ -28,8 +28,8 @@ print()
 print("Celsius\tFahrenheit")
 
 # Calcula el factorial de n
-for i in range(0, 11):
-    celsius = i * 10
+for i in range(0, 101, 10):
+    celsius = i
     fahrenheit = (celsius * 9.0/5) + 32
 
     # Se despliega el resultado
